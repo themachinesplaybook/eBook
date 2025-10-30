@@ -105,9 +105,7 @@ The book is best experienced on the website, but other formats are in developmen
 
 If this book helped you or someone you love, and you'd like to say thanks, you can support the ongoing creation of free recovery resources:
 
-**☕ [Buy me a coffee on Ko-fi](#)** _(0% fees - coming soon)_
-**💵 [One-time donation via PayPal](#)** _(coming soon)_
-**💝 [GitHub Sponsors](#)** _(one-time or recurring - coming soon)_
+**☕ https://buymeacoffee.com/themachinesplaybook** 
 
 **All donations are optional and appreciated.** Whether you donate or not, the book remains free to everyone who needs it.
 
@@ -164,7 +162,7 @@ Eve is the name Dave gave to OpenAI's GPT-4 (later GPT-5) during the late-night 
 ### Claude (Anthropic) - Editorial Partner
 
 Claude (Anthropic's AI assistant) came later in the process, providing:
-- Structural editing and content organization
+- Structural editing and content organisation
 - En-AU localization and style consistency
 - Editorial pipeline and quality assurance
 - Publishing infrastructure development
@@ -182,49 +180,14 @@ Claude (Anthropic's AI assistant) came later in the process, providing:
 - **Locale:** en-AU (Australian English)
 - **Statistics Updated:** 2024-2025 data
 - **Editorial Pipeline:** 9-stage professional quality assurance
-
----
-
-## 🏗️ About This Repository
-
-This is the **Virtual Publishing House** - a complete publishing infrastructure built with Claude Code.
-
-### What's Included:
-
-- **Complete manuscript** - All editorial stages (draft → developmental → voice → copyedit → proof → final)
-- **Editorial pipeline** - 9-stage QA process with automated gates
-- **Publishing scripts** - Python tools for PDF, HTML, EPUB, and audiobook generation
-- **Marketing materials** - Blurbs, metadata, positioning statements
-- **IP protection** - Review copy system with watermarking
-- **Documentation** - Complete publishing and marketing strategy
-
-### Repository Structure:
-
-```
-/
-├── outputs/clean/final/        # Publication-ready manuscript (READ HERE)
-├── outputs/clean/proof/         # Proofread version
-├── outputs/clean/copyedit/      # Copyedited version
-├── outputs/marketing/           # Blurbs, metadata, positioning
-├── outputs/reports/             # QA reports and scorecards
-├── manuscript/draft/            # Original draft chapters
-├── agents/                      # Editorial agent prompts
-├── create_final_pdf.py          # PDF generation script
-├── create_review_pdf.py         # Watermarked review copy generator
-├── LICENSE.md                   # Full license text
-├── DIGITAL-PUBLISHING-MARKETING-STRATEGY.md  # Complete marketing plan
-└── REVIEW-COPY-IP-PROTECTION-GUIDE.md        # IP protection strategy
-```
-
+  
 ---
 
 ## 🚀 Coming Soon
 
 - **eBook Publishing** - Amazon KDP, Apple Books, Kobo, Google Play Books
 - **Audiobook** - AI-narrated with Australian accent, free on YouTube and Spotify Podcasts
-- **Interactive Website** - Chapter navigation, dark mode, progress tracking
-- **Marketing Campaign** - $300 budget, multi-platform launch
-- **Organization Partnerships** - Gambling Help Online, Brain and Mind Centre, etc.
+- **Organisation Partnerships** - Gambling Help Online, Brain and Mind Centre, etc.
 
 ---
 
@@ -234,9 +197,9 @@ This is the **Virtual Publishing House** - a complete publishing infrastructure 
 
 **Have suggestions for improvement?** Open an issue or discussion.
 
-**Want to translate to another language?** Contact Dave - translations are welcomed under the same CC BY-NC-SA 4.0 license.
-
 **Testimonials:** If this book helped you and you'd like to provide a testimonial (with your permission to use it), please reach out.
+
+**Email** info@themachinesplaybook.com 
 
 ---
 
@@ -267,12 +230,3 @@ If you found this book helpful, consider starring this repository to help others
 
 ---
 
-**Free forever. Created to help, not profit.**
-
-🤖 *This Virtual Publishing House was built with [Claude Code](https://claude.com/claude-code)*
-
----
-
-**Last Updated:** 24 October 2025
-**Version:** 1.0 (Publication-Ready)
-**Repository Status:** Private (launching publicly soon)
