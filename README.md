@@ -3,6 +3,9 @@
 
 **By Dave Summers, with Eve (GPT) and Claude (AI)**
 
+[![Join the Conversation](https://img.shields.io/badge/Reader%20Feedback-Welcome-brightgreen)](../../issues)
+[![Discussions](https://img.shields.io/badge/Community%20Discussion-Open-blue)](../../discussions)
+
 ---
 
 ## 🌐 Read Online
@@ -229,4 +232,5 @@ Claude (Anthropic's AI assistant) came later in the process, providing:
 If you found this book helpful, consider starring this repository to help others discover it.
 
 ---
+
 
