@@ -11,11 +11,36 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <a href="index.html" class="home-link">Home</a>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-        </button>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-title"><a href="index.html">The Machine's Playbook</a></div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Chapters ▾</button>
+                    <div class="dropdown-content">
+                        <a href="chapters/00-introduction.html">Introduction</a>
+                        <a href="chapters/01-the-first-spin.html">1: The First Spin</a>
+                        <a href="chapters/02-architecture-of-entrapment.html">2: Architecture of Entrapment</a>
+                        <a href="chapters/03-the-addictive-design.html">3: The Addictive Design</a>
+                        <a href="chapters/04-social-bonds.html">4: Social Bonds</a>
+                        <a href="chapters/05-breaking-point.html">5: Breaking Point</a>
+                        <a href="chapters/06-the-real-cost.html">6: The Real Cost</a>
+                        <a href="chapters/07-illusion-of-control.html">7: Illusion of Control</a>
+                        <a href="chapters/08-escalation-and-loyalty.html">8: Escalation and Loyalty</a>
+                        <a href="chapters/09-final-design-touches.html">9: Final Design Touches</a>
+                        <a href="chapters/10-finding-the-way-out.html">10: Finding the Way Out</a>
+                        <a href="chapters/11-rewriting-rules-with-eve.html">11: Rewriting Rules with Eve</a>
+                        <a href="chapters/12-breaking-the-spell.html">12: Breaking the Spell</a>
+                    </div>
+                </div>
+                <a href="index.html#help">Get Help</a>
+                <a href="index.html#support">Support</a>
+                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                    <span id="themeIcon">☀️</span>
+                    <span id="themeText">Light</span>
+                </button>
+            </div>
+        </div>
     </nav>
 
     <div class="container">
@@ -341,44 +366,20 @@
             <a href="index.html" class="nav-next">Home →</a>
         </nav>
     </div>
-
-    <footer>
-        <div class="crisis-helpline">
-            <strong>Crisis Support:</strong> Gambling Help Online 1800 858 858 (24/7, free, confidential)
-        </div>
-        <div class="footer-links">
-            <a href="https://www.gamblinghelponline.org.au" target="_blank" rel="noopener">Gambling Help Online</a>
-            <span class="separator">•</span>
-            <a href="https://www.lifeline.org.au" target="_blank" rel="noopener">Lifeline 13 11 14</a>
-            <span class="separator">•</span>
-            <a href="https://www.beyondblue.org.au" target="_blank" rel="noopener">Beyond Blue 1300 22 4636</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="crisis-helpline" style="margin-bottom: 24px;">
+                <p style="margin: 0;"><strong>If you need help:</strong> Gambling Help Online <a href="tel:1800858858">1800 858 858</a> (24/7)</p>
+            </div>
+            <p><strong>Free forever. Created to help, not profit.</strong></p>
+            <div class="footer-links">
+                <a href="index.html#support">Support this work</a>
+                <span style="opacity: 0.5;">•</span>
+                <a href="https://github.com/themachinesplaybook/eBook/issues" target="_blank">Share feedback</a>
+            </div>
+            <p style="margin-top: 16px; font-size: 0.85em;">Copyright © 2025 Dave Summers | CC BY-NC-SA 4.0</p>
         </div>
     </footer>
-
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = themeToggle.querySelector('.theme-icon');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to dark mode
-        const currentTheme = localStorage.getItem('theme') || 'dark';
-        html.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-    </script>
 
     <script>
         // Theme toggle functionality
