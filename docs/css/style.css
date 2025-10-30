@@ -1,0 +1,490 @@
+/* The Machine's Playbook - Website Styles */
+/* Universal Dark Mode Theme */
+
+:root {
+  /* Dark Mode Colors */
+  --bg-dark: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+
+  /* Accent Colors */
+  --primary-blue: #4a9eff;
+  --dave-name: #ffd700;
+  --eve-green: #10a37f;
+  --warning-red: #ff6b6b;
+  --warning-bg: #4a3d2a;
+  --warning-border: #ffa94d;
+
+  /* Chat Bubbles */
+  --dave-bubble: #0a84ff;
+  --eve-bubble: #3a3a3c;
+  --chat-bg: #2c2c2e;
+
+  /* Borders */
+  --border-color: #404040;
+
+  /* Typography */
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Layout */
+  --content-max-width: 800px;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-dark);
+  font-size: 16px;
+}
+
+/* Layout */
+.container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+}
+
+strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+em {
+  font-style: italic;
+  color: inherit;
+}
+
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+  color: var(--text-primary);
+}
+
+li {
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+/* Content Warning */
+.content-warning {
+  background: var(--warning-bg);
+  border-left: 4px solid var(--warning-border);
+  padding: var(--space-md);
+  margin: var(--space-lg) 0;
+  border-radius: 4px;
+  color: var(--text-primary);
+}
+
+.content-warning h3 {
+  color: var(--warning-border);
+  margin-top: 0;
+}
+
+.content-warning p {
+  color: var(--text-primary);
+}
+
+/* Crisis Helpline */
+.crisis-helpline {
+  background: var(--primary-blue);
+  color: white;
+  padding: var(--space-md);
+  border-radius: 8px;
+  text-align: center;
+  margin: var(--space-lg) 0;
+}
+
+.crisis-helpline h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.crisis-helpline p {
+  color: white;
+}
+
+.crisis-helpline strong {
+  color: white;
+}
+
+.crisis-helpline a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+/* Chat Conversation Styles */
+.conversation {
+  background: var(--chat-bg);
+  padding: var(--space-lg);
+  border-radius: 12px;
+  margin: var(--space-xl) 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.conversation-header {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.conversation-header strong {
+  color: var(--text-primary);
+}
+
+/* Message Bubbles */
+.message {
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Dave's messages (LEFT-aligned, blue) - Author/driver of conversation */
+.message.dave {
+  justify-content: flex-start;
+}
+
+/* Eve's messages (RIGHT-aligned, grey) - AI responder */
+.message.eve {
+  justify-content: flex-end;
+}
+
+.message-bubble {
+  max-width: 80%;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Dave's bubble (left-aligned, blue) */
+.message.dave .message-bubble {
+  background: var(--dave-bubble);
+  color: white;
+  border-bottom-left-radius: 4px;
+  text-align: left;
+}
+
+/* Eve's bubble (right-aligned, dark grey) */
+.message.eve .message-bubble {
+  background: var(--eve-bubble);
+  color: var(--text-primary);
+  border-bottom-right-radius: 4px;
+  text-align: left;
+}
+
+.speaker-name {
+  font-weight: 600;
+  font-size: 0.85em;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.message.dave .speaker-name {
+  color: var(--dave-name);
+}
+
+.message.eve .speaker-name {
+  color: var(--eve-green);
+}
+
+.message-content {
+  line-height: 1.5;
+}
+
+/* Ensure text color is correct in bubbles */
+.message.dave .message-content {
+  color: white;
+}
+
+.message.dave .message-content p,
+.message.dave .message-content li,
+.message.dave .message-content strong,
+.message.dave .message-content em {
+  color: white;
+}
+
+.message.eve .message-content {
+  color: var(--text-primary);
+}
+
+.message.eve .message-content p,
+.message.eve .message-content li,
+.message.eve .message-content strong,
+.message.eve .message-content em {
+  color: var(--text-primary);
+}
+
+.message-content p {
+  margin-bottom: var(--space-xs);
+}
+
+.message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.message-content ul,
+.message-content ol {
+  margin-left: var(--space-md);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.message-content li {
+  margin-bottom: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-md);
+  }
+
+  .message-bubble {
+    max-width: 90%;
+  }
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.3em; }
+}
+
+/* Navigation */
+.nav {
+  background: #000000;
+  color: white;
+  padding: var(--space-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-title a {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: var(--space-md);
+  opacity: 0.9;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Chapter Navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--space-xl) 0;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+.chapter-nav a {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--primary-blue);
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.chapter-nav a:hover {
+  background: #3a8adf;
+  text-decoration: none;
+}
+
+/* Table of Contents */
+.toc {
+  background: var(--bg-secondary);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--border-color);
+}
+
+.toc h2 {
+  margin-top: 0;
+  color: var(--text-primary);
+}
+
+.toc h3 {
+  color: var(--text-primary);
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.toc a {
+  display: block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  transition: background 0.2s;
+  color: var(--primary-blue);
+}
+
+.toc a:hover {
+  background: var(--bg-tertiary);
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+.footer p {
+  color: var(--text-secondary);
+}
+
+.footer a {
+  color: var(--primary-blue);
+}
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+}
+
+/* Header section */
+header p {
+  color: var(--text-secondary);
+}
+
+header strong {
+  color: var(--text-primary);
+}
+
+/* Utility classes */
+.mt-lg { margin-top: var(--space-lg); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.separator {
+  margin: var(--space-xl) 0;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Sections */
+section {
+  color: var(--text-primary);
+}
+
+section h2, section h3 {
+  color: var(--text-primary);
+}
+
+section p {
+  color: var(--text-primary);
+}
+
+section li {
+  color: var(--text-primary);
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .nav, .chapter-nav, .footer {
+    display: none;
+  }
+
+  .conversation {
+    page-break-inside: avoid;
+    background: #f0f0f0;
+  }
+
+  .message.eve .message-bubble {
+    background: #e0e0e0;
+    color: black;
+  }
+
+  h1, h2, h3, p, li {
+    color: black;
+  }
+}
