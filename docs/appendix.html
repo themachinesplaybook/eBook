@@ -376,5 +376,38 @@
             themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
         }
     </script>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        }
+
+        function updateThemeButton(theme) {
+            const icon = document.getElementById('themeIcon');
+            const text = document.getElementById('themeText');
+
+            if (theme === 'light') {
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+            } else {
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+            }
+        }
+
+        // Apply saved theme on page load
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton(savedTheme);
+        })();
+    </script>
 </body>
 </html>

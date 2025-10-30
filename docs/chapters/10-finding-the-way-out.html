@@ -15,7 +15,26 @@
         <div class="nav-container">
             <div class="nav-title"><a href="../index.html">The Machine's Playbook</a></div>
             <div class="nav-links">
-                <a href="../index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Chapters ▾</button>
+                    <div class="dropdown-content">
+                        <a href="../chapters/00-introduction.html">Introduction</a>
+                        <a href="../chapters/01-the-first-spin.html">1: The First Spin</a>
+                        <a href="../chapters/02-architecture-of-entrapment.html">2: Architecture of Entrapment</a>
+                        <a href="../chapters/03-the-addictive-design.html">3: The Addictive Design</a>
+                        <a href="../chapters/04-social-bonds.html">4: Social Bonds</a>
+                        <a href="../chapters/05-breaking-point.html">5: Breaking Point</a>
+                        <a href="../chapters/06-the-real-cost.html">6: The Real Cost</a>
+                        <a href="../chapters/07-illusion-of-control.html">7: Illusion of Control</a>
+                        <a href="../chapters/08-escalation-and-loyalty.html">8: Escalation and Loyalty</a>
+                        <a href="../chapters/09-final-design-touches.html">9: Final Design Touches</a>
+                        <a href="../chapters/10-finding-the-way-out.html">10: Finding the Way Out</a>
+                        <a href="../chapters/11-rewriting-rules-with-eve.html">11: Rewriting Rules with Eve</a>
+                        <a href="../chapters/12-breaking-the-spell.html">12: Breaking the Spell</a>
+                    </div>
+                </div>
+                <a href="../index.html#help">Get Help</a>
+                <a href="../index.html#support">Support</a>
                 <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
                     <span id="themeIcon">☀️</span>
                     <span id="themeText">Light</span>
@@ -642,7 +661,6 @@
     <footer>
         <p>&copy; 2025 The Machine's Playbook. All rights reserved.</p>
     </footer>
-
     <footer class="footer">
         <div class="container">
             <div class="crisis-helpline" style="margin-bottom: 24px;">
@@ -650,12 +668,46 @@
             </div>
             <p><strong>Free forever. Created to help, not profit.</strong></p>
             <div class="footer-links">
-                <a href="https://buymeacoffee.com/themachinesplaybook" target="_blank">Support this work</a>
+                <a href="../index.html#support">Support this work</a>
                 <span style="opacity: 0.5;">•</span>
                 <a href="https://github.com/themachinesplaybook/eBook/issues" target="_blank">Share feedback</a>
             </div>
+            <p style="margin-top: 16px; font-size: 0.85em;">Copyright © 2025 Dave Summers | CC BY-NC-SA 4.0</p>
         </div>
     </footer>
 
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        }
+
+        function updateThemeButton(theme) {
+            const icon = document.getElementById('themeIcon');
+            const text = document.getElementById('themeText');
+
+            if (theme === 'light') {
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+            } else {
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+            }
+        }
+
+        // Apply saved theme on page load
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton(savedTheme);
+        })();
+    </script>
 </body>
 </html>
