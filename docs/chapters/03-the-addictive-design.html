@@ -4,45 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 3: The Addictive Design - The Machine's Playbook</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-title"><a href="../index.html">The Machine's Playbook</a></div>
-            <div class="nav-links">
-                <div class="dropdown">
-                    <button class="dropbtn">Chapters ▾</button>
-                    <div class="dropdown-content">
-                        <a href="../chapters/00-introduction.html">Introduction</a>
-                        <a href="../chapters/01-the-first-spin.html">1: The First Spin</a>
-                        <a href="../chapters/02-architecture-of-entrapment.html">2: Architecture of Entrapment</a>
-                        <a href="../chapters/03-the-addictive-design.html">3: The Addictive Design</a>
-                        <a href="../chapters/04-social-bonds.html">4: Social Bonds</a>
-                        <a href="../chapters/05-breaking-point.html">5: Breaking Point</a>
-                        <a href="../chapters/06-the-real-cost.html">6: The Real Cost</a>
-                        <a href="../chapters/07-illusion-of-control.html">7: Illusion of Control</a>
-                        <a href="../chapters/08-escalation-and-loyalty.html">8: Escalation and Loyalty</a>
-                        <a href="../chapters/09-final-design-touches.html">9: Final Design Touches</a>
-                        <a href="../chapters/10-finding-the-way-out.html">10: Finding the Way Out</a>
-                        <a href="../chapters/11-rewriting-rules-with-eve.html">11: Rewriting Rules with Eve</a>
-                        <a href="../chapters/12-breaking-the-spell.html">12: Breaking the Spell</a>
-                    </div>
-                </div>
-                <a href="../index.html#help">Get Help</a>
-                <a href="../index.html#support">Support</a>
-                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
-                    <span id="themeIcon">☀️</span>
-                    <span id="themeText">Light</span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
         <nav class="chapter-nav top-nav">
             <a href="02-architecture-of-entrapment.html" class="nav-prev">← Previous</a>
@@ -356,7 +320,7 @@
 
             <p>This is why small wins feel so good even when you're losing overall. Your brain is literally tricking you into thinking you're succeeding when you're failing.</p>
 
-            <p>And the unpredictability of when those wins come makes the dopamine hits even more powerful. Here's what the research shows: a study published in the journal <em>Biological Psychiatry</em> found that problem gamblers showed significantly higher dopamine release during gambling than recreational gamblers, particularly during near-miss events. Your brain is working against you. It's been hijacked by a machine specifically designed to exploit these neural pathways.</p>
+            <p>And the unpredictability of when those wins come makes the dopamine hits even more powerful. Here's what the research shows: a study by Linnet et al. (2011) published in the journal <em>Addiction</em> found that problem gamblers showed significantly higher dopamine release during gambling than recreational gamblers, particularly during near-miss events. Your brain is working against you. It's been hijacked by a machine specifically designed to exploit these neural pathways.</p>
 
             <h2>Practical Tools to Break Free So how do you fight back against your own brain chemistry?</h2>
 
@@ -452,7 +416,7 @@
 
             <p>But it's not impossible. Research on extinction of conditioned responses shows that awareness is the first step.</p>
 
-            <p>When you understand that your behaviour is being manipulated by a carefully designed reward schedule, the conditioning begins to weaken. A study in <em>Addiction</em> journal found that cognitive behavioural approaches that specifically targeted gamblers' understanding of randomness and odds significantly reduced gambling behaviour. Knowledge is genuinely protective.</p>
+            <p>When you understand that your behaviour is being manipulated by a carefully designed reward schedule, the conditioning begins to weaken. Research has found that cognitive behavioural approaches that specifically target gamblers' understanding of randomness and odds significantly reduce gambling behaviour. Knowledge is genuinely protective.</p>
 
             <p>The more you understand about how these machines work, the less power they have over you.</p>
 
@@ -480,53 +444,5 @@
             <a href="04-social-bonds.html" class="nav-next">Next →</a>
         </nav>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="crisis-helpline" style="margin-bottom: 24px;">
-                <p style="margin: 0;"><strong>If you need help:</strong> Gambling Help Online <a href="tel:1800858858">1800 858 858</a> (24/7)</p>
-            </div>
-            <p><strong>Free forever. Created to help, not profit.</strong></p>
-            <div class="footer-links">
-                <a href="../index.html#support">Support this work</a>
-                <span style="opacity: 0.5;">•</span>
-                <a href="https://github.com/themachinesplaybook/eBook/issues" target="_blank">Share feedback</a>
-            </div>
-            <p style="margin-top: 16px; font-size: 0.85em;">Copyright © 2025 David John Summers | CC BY-NC-SA 4.0</p>
-        </div>
-    </footer>
-
-
-    <script>
-        // Theme toggle functionality
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeButton(newTheme);
-        }
-
-        function updateThemeButton(theme) {
-            const icon = document.getElementById('themeIcon');
-            const text = document.getElementById('themeText');
-
-            if (theme === 'light') {
-                icon.textContent = '🌙';
-                text.textContent = 'Dark';
-            } else {
-                icon.textContent = '☀️';
-                text.textContent = 'Light';
-            }
-        }
-
-        // Apply saved theme on page load
-        (function() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            updateThemeButton(savedTheme);
-        })();
-    </script>
 </body>
 </html>
