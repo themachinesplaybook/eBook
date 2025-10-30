@@ -1,10 +1,9 @@
 ---
-name: Reader Experience & Impact
+name: Reader Feedback
 about: Share your experience reading The Machine’s Playbook
-title: ''
-labels: ''
-assignees: ''
-
+title: "[Feedback] "
+labels: ["feedback","reader"]
+assignees: ""
 ---
 
 Thank you for reading *The Machine’s Playbook* — your voice matters.
