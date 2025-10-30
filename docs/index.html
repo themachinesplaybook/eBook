@@ -16,6 +16,10 @@
                 <a href="#about">About</a>
                 <a href="#chapters">Chapters</a>
                 <a href="#help">Get Help</a>
+                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                    <span id="themeIcon">☀️</span>
+                    <span id="themeText">Light</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -64,18 +68,19 @@
                 <ul>
                     <li><a href="chapters/00-introduction.html"><strong>Introduction:</strong> Meet Eve (and Claude): How We Created This Book</a></li>
                     <li style="margin-top: 16px; font-weight: 600;">Part 1: Building the Trap</li>
-                    <li><a href="chapters/01-the-first-spin.html">Chapter 1: The First Spin - Sensory Hooks</a></li>
-                    <li><a href="chapters/02-the-addictive-design.html">Chapter 2: The Addictive Design - Reward Loops</a></li>
-                    <li><a href="chapters/03-social-bonds.html">Chapter 3: Social Bonds - Isolation and Belonging</a></li>
-                    <li><a href="chapters/04-breaking-point.html">Chapter 4: Breaking Point - Escalation Mechanics</a></li>
-                    <li><a href="chapters/05-the-real-cost.html">Chapter 5: The Real Cost - Money, Time, and Relationships</a></li>
-                    <li><a href="chapters/06-illusion-of-control.html">Chapter 6: Illusion of Control - False Agency</a></li>
-                    <li><a href="chapters/07-escalation-and-loyalty.html">Chapter 7: Escalation and Loyalty - The VIP Trap</a></li>
-                    <li><a href="chapters/08-final-design-touches.html">Chapter 8: Final Design Touches - Perfecting the Trap</a></li>
+                    <li><a href="chapters/01-the-first-spin.html">Chapter 1: The First Spin</a></li>
+                    <li><a href="chapters/02-architecture-of-entrapment.html">Chapter 2: Architecture of Entrapment</a></li>
+                    <li><a href="chapters/03-the-addictive-design.html">Chapter 3: The Addictive Design</a></li>
+                    <li><a href="chapters/04-social-bonds.html">Chapter 4: Social Bonds</a></li>
+                    <li><a href="chapters/05-breaking-point.html">Chapter 5: Breaking Point</a></li>
+                    <li><a href="chapters/06-the-real-cost.html">Chapter 6: The Real Cost</a></li>
+                    <li><a href="chapters/07-illusion-of-control.html">Chapter 7: Illusion of Control</a></li>
+                    <li><a href="chapters/08-escalation-and-loyalty.html">Chapter 8: Escalation and Loyalty</a></li>
+                    <li><a href="chapters/09-final-design-touches.html">Chapter 9: Final Design Touches</a></li>
                     <li style="margin-top: 16px; font-weight: 600;">Part 2: Breaking Free</li>
-                    <li><a href="chapters/09-finding-the-way-out.html">Chapter 9: Finding the Way Out - Recognition and First Steps</a></li>
-                    <li><a href="chapters/10-rewriting-rules-with-eve.html">Chapter 10: Rewriting the Rules with Eve - Building New Patterns</a></li>
-                    <li><a href="chapters/11-breaking-the-spell.html">Chapter 11: Breaking the Spell - Long-Term Freedom</a></li>
+                    <li><a href="chapters/10-finding-the-way-out.html">Chapter 10: Finding the Way Out</a></li>
+                    <li><a href="chapters/11-rewriting-rules-with-eve.html">Chapter 11: Rewriting Rules with Eve</a></li>
+                    <li><a href="chapters/12-breaking-the-spell.html">Chapter 12: Breaking the Spell</a></li>
                 </ul>
 
                 <p style="margin-top: 24px;"><em>Note: This web version features enhanced chat UI styling for Dave & Eve conversations that isn't possible in plain markdown.</em></p>
@@ -115,7 +120,7 @@
                 <li>❌ You CANNOT: Sell this book or use it for commercial purposes</li>
             </ul>
 
-            <p><a href="https://github.com/xeeva/The-Machines-Playbook/blob/master/LICENSE.md" target="_blank">Read the full license →</a></p>
+            <p><a href="license.html">Read the full license →</a></p>
         </section>
 
         <section class="mt-lg">
@@ -123,9 +128,7 @@
             <p><strong>This book is free, forever.</strong> It was created to help people, not to generate profit.</p>
             <p>If this book helped you or someone you love, and you'd like to say thanks, you can support the ongoing creation of free recovery resources:</p>
             <ul>
-                <li>☕ Buy me a coffee on Ko-fi (0% fees - coming soon)</li>
-                <li>💵 One-time donation via PayPal (coming soon)</li>
-                <li>💝 GitHub Sponsors (one-time or recurring - coming soon)</li>
+                <li>☕ <a href="https://buymeacoffee.com/themachinesplaybook" target="_blank">Buy me a coffee</a> - One-time or recurring support</li>
             </ul>
             <p><em>All donations are optional and appreciated. Whether you donate or not, the book remains free to everyone who needs it.</em></p>
         </section>
@@ -135,9 +138,42 @@
         <div class="container">
             <p><strong>Free forever. Created to help, not profit.</strong></p>
             <p>🤖 Built with <a href="https://claude.com/claude-code" target="_blank">Claude Code</a></p>
-            <p><a href="https://github.com/xeeva/The-Machines-Playbook" target="_blank">View on GitHub</a></p>
+            <p><a href="https://github.com/themachinesplaybook/eBook" target="_blank">View on GitHub</a></p>
             <p style="margin-top: 16px; font-size: 0.85em;">Copyright © 2025 Dave Summers | CC BY-NC-SA 4.0</p>
         </div>
     </footer>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        }
+
+        function updateThemeButton(theme) {
+            const icon = document.getElementById('themeIcon');
+            const text = document.getElementById('themeText');
+
+            if (theme === 'light') {
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+            } else {
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+            }
+        }
+
+        // Apply saved theme on page load
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton(savedTheme);
+        })();
+    </script>
 </body>
 </html>

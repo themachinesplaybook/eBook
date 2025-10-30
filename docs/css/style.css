@@ -1,8 +1,8 @@
 /* The Machine's Playbook - Website Styles */
-/* Universal Dark Mode Theme */
+/* Light and Dark Mode Theme */
 
 :root {
-  /* Dark Mode Colors */
+  /* Dark Mode Colors (default) */
   --bg-dark: #1a1a1a;
   --bg-secondary: #2d2d2d;
   --bg-tertiary: #3a3a3a;
@@ -40,6 +40,30 @@
 
   /* Layout */
   --content-max-width: 800px;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+  --bg-dark: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e8e8e8;
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6a6a6a;
+
+  --primary-blue: #0066cc;
+  --dave-name: #d4a506;
+  --eve-green: #0d8968;
+  --warning-red: #d93025;
+  --warning-bg: #fff4e5;
+  --warning-border: #ff9800;
+
+  --dave-bubble: #0066cc;
+  --eve-bubble: #e8e8e8;
+  --chat-bg: #f9f9f9;
+
+  --border-color: #d0d0d0;
 }
 
 /* Base styles */
@@ -487,4 +511,76 @@ section li {
   h1, h2, h3, p, li {
     color: black;
   }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: var(--space-md);
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .theme-toggle {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Light mode specific adjustments for nav */
+[data-theme="light"] .nav {
+  background: #000000;
+}
+
+[data-theme="light"] .nav-title,
+[data-theme="light"] .nav-links a {
+  color: white;
+}
+
+/* Light mode crisis helpline - keep good contrast */
+[data-theme="light"] .crisis-helpline {
+  background: #0066cc;
+}
+
+/* Light mode chat bubble text colors */
+[data-theme="light"] .message.dave .message-bubble {
+  color: white;
+}
+
+[data-theme="light"] .message.dave .message-content,
+[data-theme="light"] .message.dave .message-content p,
+[data-theme="light"] .message.dave .message-content li,
+[data-theme="light"] .message.dave .message-content strong,
+[data-theme="light"] .message.dave .message-content em {
+  color: white;
+}
+
+[data-theme="light"] .message.eve .message-bubble {
+  color: #1a1a1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .message.eve .message-content,
+[data-theme="light"] .message.eve .message-content p,
+[data-theme="light"] .message.eve .message-content li,
+[data-theme="light"] .message.eve .message-content strong,
+[data-theme="light"] .message.eve .message-content em {
+  color: #1a1a1a;
 }
