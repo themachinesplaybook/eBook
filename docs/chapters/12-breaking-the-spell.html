@@ -133,21 +133,21 @@ If someone told you there was a game where you could spend $1 for a 1 in 10 mill
 
         <p>I have a retirement fund.</p>
 
-        <p>I have an emergency fund. My kids' education is funded. I'm not wealthy, but I'm secure.</p>
+        <p>I have an emergency fund. My child's education is funded. I'm not wealthy, but I'm secure.</p>
 
         <p>That security was impossible while gambling.</p>
 
-        <p><strong>Time:</strong></p>
+        <h3>Time:</h3>
 
-        <p>I get 15 hours per week back. That's 780 hours per year. Nearly 8,000 hours in the decade since I quit. I've used that time to build a business, play competitive 8-ball pool in an amateur league, be present for my kids' childhoods, deepen my marriage, pursue hobbies that add value to my life.</p>
+        <p>I get 15 hours per week back. That's 780 hours per year. Nearly 8,000 hours in the decade since I quit. I've used that time to build a business, play competitive 8-ball pool in an amateur league, be present for my child's childhood, strengthen important relationships, pursue hobbies that add value to my life.</p>
 
         <p>Every hour not spent at a machine is an hour I get to spend on something real.</p>
 
-        <p><strong>Relationships:</strong></p>
+        <h3>Relationships:</h3>
 
-        <p>My wife trusts me again.</p>
+        <p>The important people in my life trust me again.</p>
 
-        <p>That took years to rebuild, but it happened. My kids respect me. My extended family no longer worries about me. I've built genuine friendships based on shared interests, not shared addiction.</p>
+        <p>That took years to rebuild, but it happened. My child respects me. My extended family no longer worries about me. I've built genuine friendships based on shared interests, not shared addiction.</p>
 
         <p>The social connections I have now are real, deep, and life-giving.</p>
 
@@ -360,7 +360,7 @@ If someone told you there was a game where you could spend $1 for a 1 in 10 mill
         <h2>A Message from Eve</h2>
 
         <div class="conversation">
-            <div class="conversation-header">💬 <strong>Conversation with Eve</strong></div>
+            <div class="conversation-header">Dave &amp; Eve</div>
 
             <div class="message eve">
                 <div class="message-bubble">
@@ -407,6 +407,8 @@ If someone told you there was a game where you could spend $1 for a 1 in 10 mill
                 </div>
             </div>
         </div>
+
+        <div class="scene-break">***</div>
 
         <h2>The Ultimate Win</h2>
 
@@ -598,21 +600,30 @@ If someone told you there was a game where you could spend $1 for a 1 in 10 mill
             const html = document.documentElement;
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+            updateThemeButton(newTheme);
         }
 
-        function updateThemeIcon(theme) {
-            const icon = document.getElementById('theme-icon');
-            icon.textContent = theme === 'light' ? '🌙' : '☀️';
+        function updateThemeButton(theme) {
+            const icon = document.getElementById('themeIcon');
+            const text = document.getElementById('themeText');
+
+            if (theme === 'light') {
+                icon.textContent = '🌙';
+                text.textContent = 'Dark';
+            } else {
+                icon.textContent = '☀️';
+                text.textContent = 'Light';
+            }
         }
 
-        // Initialize theme from localStorage
+        // Apply saved theme on page load
         (function() {
             const savedTheme = localStorage.getItem('theme') || 'dark';
             document.documentElement.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
+            updateThemeButton(savedTheme);
         })();
     </script>
 </body>
