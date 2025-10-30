@@ -5,6 +5,14 @@
 
 ---
 
+## 🌐 Read Online
+
+**📖 Visit the website:** **[TheMachinesPlaybook.com](https://themachinesplaybook.com)**
+
+This repository hosts the complete HTML website for "The Machine's Playbook" - a free book on gambling addiction recovery, featuring enhanced chat UI styling for Dave & Eve conversations.
+
+---
+
 > **⚠️ If you're in crisis right now:**
 >
 > **Gambling Help Online:** 1800 858 858 (24/7, free, confidential)
@@ -28,100 +36,66 @@ This book exposes the hidden psychological manipulation tactics that poker machi
 
 ---
 
-## 📚 Read the Book
+## 📚 Website Features
 
 **Publication Status:** ✅ Complete and publication-ready (40,707 words)
 
-### Table of Contents
+- ✅ Responsive design with mobile support
+- ✅ Chat UI styling for Dave & Eve conversations
+- ✅ Light/Dark mode toggle
+- ✅ Chapter navigation
+- ✅ Crisis helpline information prominently displayed
+- ✅ Full license information page
 
-**[Introduction: Meet Eve (and Claude): How We Created This Book](outputs/clean/final/00-introduction.md)**
-- My story: $200K lost, freedom found
-- The Australian pokie crisis
-- How this book was created (Dave + Eve + Claude)
-- "The Spark" - Why we designed the perfect trap
-- The first conversation: Our methodology
+### Repository Structure
 
----
-
-### Part 1: Building the Trap
-
-**[Chapter 1: The First Spin - Sensory Hooks](outputs/clean/final/01-the-first-spin.md)**
-- How lights, sounds, and scents hijack your brain
-- The "zone" - where time disappears
-- **Defense strategies:** The 5-minute rule, sensory disruption
-
-**[Chapter 2: The Addictive Design - Reward Loops](outputs/clean/final/02-the-addictive-design.md)**
-- Near-misses and false wins
-- Variable ratio reinforcement schedules
-- **Defense strategies:** Outcome tracking, reward redirection
-
-**[Chapter 3: Social Bonds - Isolation and Belonging](outputs/clean/final/03-social-bonds.md)**
-- How venues create false communities
-- Loyalty programs and "VIP" treatment
-- **Defense strategies:** Real connection, social accountability
-
-**[Chapter 4: Breaking Point - Escalation Mechanics](outputs/clean/final/04-breaking-point.md)**
-- Loss-chasing and the sunk cost fallacy
-- "Just one more spin" psychology
-- **Defense strategies:** Hard limits, financial barriers
-
-**[Chapter 5: The Real Cost - Money, Time, and Relationships](outputs/clean/final/05-the-real-cost.md)**
-- $32 billion lost annually in Australia
-- 200,000 machines extracting wealth
-- Impact on families and communities
-- **Defense strategies:** Cost visualization, relationship repair
-
-**[Chapter 6: Illusion of Control - False Agency](outputs/clean/final/06-illusion-of-control.md)**
-- Button timing myths
-- "Hot" and "cold" machine fallacies
-- RNG reality vs. superstitious beliefs
-- **Defense strategies:** Understanding randomness, cognitive restructuring
-
-**[Chapter 7: Escalation and Loyalty - The VIP Trap](outputs/clean/final/07-escalation-and-loyalty.md)**
-- Tiered rewards systems
-- Personalized offers and "special" treatment
-- **Defense strategies:** Declining rewards, value reframing
-
-**[Chapter 8: Final Design Touches - Perfecting the Trap](outputs/clean/final/08-final-design-touches.md)**
-- Cashless gaming and ATM placement
-- Venue layout designed to disorient
-- Staff training to maximize play
-- **Defense strategies:** Cash-only rules, environmental awareness
+```
+docs/
+├── index.html              # Landing page
+├── license.html            # Full CC BY-NC-SA 4.0 license
+├── Cover.png              # Book cover image
+├── CNAME                  # Custom domain configuration
+├── css/
+│   └── style.css         # All styling including chat UI and light/dark themes
+└── chapters/             # All 13 chapters as HTML
+    ├── 00-introduction.html
+    ├── 01-the-first-spin.html
+    ├── 02-architecture-of-entrapment.html
+    ├── 03-the-addictive-design.html
+    ├── 04-social-bonds.html
+    ├── 05-breaking-point.html
+    ├── 06-the-real-cost.html
+    ├── 07-illusion-of-control.html
+    ├── 08-escalation-and-loyalty.html
+    ├── 09-final-design-touches.html
+    ├── 10-finding-the-way-out.html
+    ├── 11-rewriting-rules-with-eve.html
+    └── 12-breaking-the-spell.html
+```
 
 ---
 
-### Part 2: Breaking Free
+## 🎨 Design Features
 
-**[Chapter 9: Finding the Way Out - Recognition and First Steps](outputs/clean/final/09-finding-the-way-out.md)**
-- Recognizing you have a problem
-- The moment I realized I was trapped
-- First steps toward freedom
-- **Action plan:** Initial recovery strategies
+**Chat UI Design:**
+- Dave's messages: Left-aligned, blue bubbles with gold name
+- Eve's messages: Right-aligned, grey bubbles with green name
+- Familiar messaging app interface (like ChatGPT/iMessage)
 
-**[Chapter 10: Rewriting the Rules with Eve - Building New Patterns](outputs/clean/final/10-rewriting-rules-with-eve.md)**
-- How AI helped me understand my addiction
-- Replacing gambling rituals with healthy habits
-- Building sustainable recovery
-- **Recovery toolkit:** Daily practices that work
-
-**[Chapter 11: Breaking the Spell - Long-Term Freedom](outputs/clean/final/11-breaking-the-spell.md)**
-- Maintaining recovery
-- Helping others break free
-- **Recovery Toolkit:** Quick reference guide (all strategies compiled)
-- **If You Need Help Right Now:** Crisis resources and support
+**Theme Toggle:**
+- Light mode: Clean white background, dark text, proper contrast
+- Dark mode: Dark background with blue accents (default)
+- Preference saved in localStorage across all pages
 
 ---
 
 ## 📥 Download the Book
 
-**Formats Available:**
+The book is best experienced on the website, but other formats are in development:
 
-- **[PDF (Final Manuscript)](THE-MACHINES-PLAYBOOK-Complete-Manuscript-FINAL.pdf)** - 272 KB, publication-ready
 - **EPUB** - Coming soon (Kindle, Apple Books, etc.)
 - **Audiobook** - Coming soon (AI-narrated, Australian accent)
-- **HTML Website** - Coming soon (interactive online version)
-
-**Previous Title:** This book was previously titled "The Pokie Addict in Me" - you may see references to both titles.
+- **PDF** - Available on request
 
 ---
 

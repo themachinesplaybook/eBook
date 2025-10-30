@@ -461,6 +461,20 @@ header strong {
   color: var(--text-primary);
 }
 
+/* Cover image */
+header img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] header img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Utility classes */
 .mt-lg { margin-top: var(--space-lg); }
 .mb-lg { margin-bottom: var(--space-lg); }

@@ -3,238 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 8: Escalation and Loyalty - The Machine's Playbook</title>
-    <style>
-        body {
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            line-height: 1.8;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .chapter {
-            background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            color: #1a1a1a;
-            border-bottom: 3px solid #333;
-            padding-bottom: 10px;
-        }
-        h2 {
-            font-size: 2em;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-            color: #2c2c2c;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-top: 1.2em;
-            margin-bottom: 0.5em;
-            color: #3c3c3c;
-        }
-        .conversation {
-            background-color: #f9f9f9;
-            border-left: 4px solid #666;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .speaker {
-            font-weight: bold;
-            color: #000;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-        .speaker:first-child {
-            margin-top: 0;
-        }
-        .dave {
-            color: #8B0000;
-        }
-        .eve {
-            color: #000080;
-        }
-        .scene-break {
-            text-align: center;
-            margin: 40px 0;
-            font-size: 1.5em;
-            letter-spacing: 0.5em;
-        }
-        .navigation {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #ccc;
-        }
-        .nav-link {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            border: 1px solid #333;
-            transition: background-color 0.3s;
-        }
-        .nav-link:hover {
-            background-color: #333;
-            color: white;
-        }
-        p {
-            margin-bottom: 1em;
-        }
-        ul {
-            margin: 1em 0;
-            padding-left: 2em;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-        strong {
-            font-weight: bold;
-        }
-    </style>
+    <title>Chapter 8: When the Bet Increases - The Machine's Playbook</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <div class="nav-title"><a href="../index.html">The Machine's Playbook</a></div>
+            <div class="nav-title"><a href="../index.html" style="color: white;">The Machine's Playbook</a></div>
             <div class="nav-links">
                 <a href="../index.html">Home</a>
-                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
-                    <span id="themeIcon">☀️</span>
-                    <span id="themeText">Light</span>
+                <a href="../index.html#chapters">Chapters</a>
+                <a href="../index.html#help">Get Help</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
                 </button>
             </div>
         </div>
     </nav>
 
-    <div class="chapter">
-        <h1>Chapter 8: When the Bet Increases</h1>
+    <div class="container">
+        <h2>Chapter 8: When the Bet Increases</h2>
 
         <h3>Encouraging Bigger Risks: The Escalation Trap</h3>
 
         <div class="conversation">
-            <div class="speaker dave">Dave:</div>
-            <p>Eve, we need to talk about one of the most profitable mechanisms for venues—getting players to increase their bets.</p>
-            <p>Someone who comes in planning to spend $50 at $1 per spin is manageable profit.</p>
-            <p>But if we can get them up to $5 or $10 per spin, we've multiplied our take significantly.</p>
-            <p>How do we do that?</p>
+            <div class="conversation-header">💬 <strong>Conversation with Eve</strong></div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Escalation is all about creating a narrative of progression.</p>
-            <p>Players need to feel like increasing their bets is a logical next step, not reckless behaviour.</p>
-            <p>We need to frame higher betting as smarter, more sophisticated, more likely to lead to significant wins.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Eve, we need to talk about one of the most profitable mechanisms for venues—getting players to increase their bets.</p>
+                        <p>Someone who comes in planning to spend $50 at $1 per spin is manageable profit.</p>
+                        <p>But if we can get them up to $5 or $10 per spin, we've multiplied our take significantly.</p>
+                        <p>How do we do that?</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>Let's start with subtle nudges.</p>
-            <p>Messages on the screen like 'Maximise your chances!' or 'Increase your bet to unlock bigger bonuses!' It implies that higher bets give you better odds or access to better features.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Escalation is all about creating a narrative of progression.</p>
+                        <p>Players need to feel like increasing their bets is a logical next step, not reckless behaviour.</p>
+                        <p>We need to frame higher betting as smarter, more sophisticated, more likely to lead to significant wins.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Which is mathematically false—the house edge remains constant regardless of bet size.</p>
-            <p>But we're not concerned with mathematical accuracy. We're creating emotional justification for escalation. 'I'm not betting more recklessly—I'm unlocking features and maximising my potential wins.'</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Let's start with subtle nudges.</p>
+                        <p>Messages on the screen like 'Maximise your chances!' or 'Increase your bet to unlock bigger bonuses!' It implies that higher bets give you better odds or access to better features.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>What about tiered betting systems? Make certain bonus features only available at higher bet levels. 'Bet $5 or more to access the mega jackpot!' Now higher betting isn't bigger risk—it's accessing premium content.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Which is mathematically false—the house edge remains constant regardless of bet size.</p>
+                        <p>But we're not concerned with mathematical accuracy. We're creating emotional justification for escalation. 'I'm not betting more recklessly—I'm unlocking features and maximising my potential wins.'</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Brilliant.</p>
-            <p>You're not gambling more aggressively; you're upgrading your experience. It's the same psychological principle as upselling from economy to business class.</p>
-            <p>The higher tier feels like better value, access to more, even though the fundamental service—random number generation—is identical.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>What about tiered betting systems? Make certain bonus features only available at higher bet levels. 'Bet $5 or more to access the mega jackpot!' Now higher betting isn't bigger risk—it's accessing premium content.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>We should create urgency around escalation too. 'Special tonight: bet $5 or more to earn triple points!' Limited-time offers that create FOMO. 'Everyone else is betting big to take advantage of this special—are you missing out?'</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Brilliant.</p>
+                        <p>You're not gambling more aggressively; you're upgrading your experience. It's the same psychological principle as upselling from economy to business class.</p>
+                        <p>The higher tier feels like better value, access to more, even though the fundamental service—random number generation—is identical.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>And let's use social proof.</p>
-            <p>Display nearby players' bets. 'Jenny won $500 on a $10 bet!' When players see others betting large amounts and winning, it normalises higher betting and creates competitive pressure.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>We should create urgency around escalation too. 'Special tonight: bet $5 or more to earn triple points!' Limited-time offers that create FOMO. 'Everyone else is betting big to take advantage of this special—are you missing out?'</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>Right, they think 'If Jenny can afford $10 spins, why am I sitting here doing $1 spins like an amateur?' We're leveraging pride and status-seeking to drive escalation.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>And let's use social proof.</p>
+                        <p>Display nearby players' bets. 'Jenny won $500 on a $10 bet!' When players see others betting large amounts and winning, it normalises higher betting and creates competitive pressure.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>What about loss-chasing prompts? When a player has lost a larger amount, we could flash messages like 'Big win coming—stay in the game!' or 'Your luck is about to turn!' This encourages them to increase bets to win back losses faster.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Right, they think 'If Jenny can afford $10 spins, why am I sitting here doing $1 spins like an amateur?' We're leveraging pride and status-seeking to drive escalation.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>That's the most dangerous escalation pattern.</p>
-            <p>They've lost $200 at $2 per spin, which would take 100 wins to recover.</p>
-            <p>But if they increase to $10 per spin, maybe they can recover with 20 wins! The math seems to check out—higher bets mean faster recovery.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>What about loss-chasing prompts? When a player has lost a larger amount, we could flash messages like 'Big win coming—stay in the game!' or 'Your luck is about to turn!' This encourages them to increase bets to win back losses faster.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Of course, the higher bets also mean faster losses if they don't hit those wins.</p>
-            <p>But we're not highlighting that. We're creating the narrative that escalation is strategic—a smart way to recover rather than a desperate amplification of loss.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>That's the most dangerous escalation pattern.</p>
+                        <p>They've lost $200 at $2 per spin, which would take 100 wins to recover.</p>
+                        <p>But if they increase to $10 per spin, maybe they can recover with 20 wins! The math seems to check out—higher bets mean faster recovery.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>Let's talk about automatic bet escalation features. 'Auto-increase mode: automatically raises your bet by 10% after each loss!' We frame it as a strategy tool, but it's a disaster amplifier.</p>
-            <p>Players can activate it thinking they're using a smart system when they're programming their own financial destruction.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Of course, the higher bets also mean faster losses if they don't hit those wins.</p>
+                        <p>But we're not highlighting that. We're creating the narrative that escalation is strategic—a smart way to recover rather than a desperate amplification of loss.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>We should offer 'betting strategies' as machine features.</p>
-            <p>Fibonacci betting, Martingale systems, progressive betting—all presented as sophisticated tools for serious players. They're all worthless against an RNG, but they make players feel skilled and give them frameworks for escalating bets.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Let's talk about automatic bet escalation features. 'Auto-increase mode: automatically raises your bet by 10% after each loss!' We frame it as a strategy tool, but it's a disaster amplifier.</p>
+                        <p>Players can activate it thinking they're using a smart system when they're programming their own financial destruction.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>And these systems have an insidious quality—they sometimes work in the short term.</p>
-            <p>You might win back losses following a Martingale system a few times.</p>
-            <p>This reinforces the belief that the system is valid when you've experienced normal variance that would have occurred with flat betting.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>We should offer 'betting strategies' as machine features.</p>
+                        <p>Fibonacci betting, Martingale systems, progressive betting—all presented as sophisticated tools for serious players. They're all worthless against an RNG, but they make players feel skilled and give them frameworks for escalating bets.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Then when the system inevitably fails—when you hit a long losing streak that wipes out your bankroll following your 'smart' progression system—players don't blame the system.</p>
-            <p>They think they didn't have enough bankroll to let the system work, or they applied it at the wrong time.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>And these systems have an insidious quality—they sometimes work in the short term.</p>
+                        <p>You might win back losses following a Martingale system a few times.</p>
+                        <p>This reinforces the belief that the system is valid when you've experienced normal variance that would have occurred with flat betting.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>So they come back with more money, determined to properly execute their system.</p>
-            <p>We've turned a failed betting strategy into motivation for further play. That's beautifully cruel.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Then when the system inevitably fails—when you hit a long losing streak that wipes out your bankroll following your 'smart' progression system—players don't blame the system.</p>
+                        <p>They think they didn't have enough bankroll to let the system work, or they applied it at the wrong time.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>What about promotion nights specifically designed to encourage escalation? 'High Roller Night: Bet $5 or more per spin and receive exclusive VIP treatment!' Free premium drinks, special seating, recognition on screens—all contingent on maintaining high bet levels.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>So they come back with more money, determined to properly execute their system.</p>
+                        <p>We've turned a failed betting strategy into motivation for further play. That's beautifully cruel.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>Oh yes, and we make it an event with a specific dress code, special hosts, a feeling of exclusivity.</p>
-            <p>Players prepare for it. 'I'm going to High Roller Night on Friday.' They've committed to elevated betting before they even arrive.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>What about promotion nights specifically designed to encourage escalation? 'High Roller Night: Bet $5 or more per spin and receive exclusive VIP treatment!' Free premium drinks, special seating, recognition on screens—all contingent on maintaining high bet levels.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>And during these events, the minimum bet to participate becomes the norm.</p>
-            <p>Someone who usually bets $2 shows up to High Roller Night where the minimum is $5. They've already decided to participate in the event, so the higher betting becomes the expected standard.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Oh yes, and we make it an event with a specific dress code, special hosts, a feeling of exclusivity.</p>
+                        <p>Players prepare for it. 'I'm going to High Roller Night on Friday.' They've committed to elevated betting before they even arrive.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>Let's add bet achievement milestones. 'You've placed 100 spins at $5 or more—you're now in our Big Bettor Club!' Creating identity around higher betting levels.</p>
-            <p>You're not recklessly escalating—you're joining an elite tier of serious players.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>And during these events, the minimum bet to participate becomes the norm.</p>
+                        <p>Someone who usually bets $2 shows up to High Roller Night where the minimum is $5. They've already decided to participate in the event, so the higher betting becomes the expected standard.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>And that identity creates pressure to maintain the behaviour.</p>
-            <p>Once you're a 'big bettor,' dropping back down to $1 spins feels like regression, like admitting you can't handle the higher levels. Pride keeps bets elevated even when finances suggest they should decrease.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>Let's add bet achievement milestones. 'You've placed 100 spins at $5 or more—you're now in our Big Bettor Club!' Creating identity around higher betting levels.</p>
+                        <p>You're not recklessly escalating—you're joining an elite tier of serious players.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>What about features that seem to justify escalation through enhanced excitement? 'Bet $10 to activate the double-speed jackpot round!' Higher bets don't risk more money—they unlock more thrilling experiences.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>And that identity creates pressure to maintain the behaviour.</p>
+                        <p>Once you're a 'big bettor,' dropping back down to $1 spins feels like regression, like admitting you can't handle the higher levels. Pride keeps bets elevated even when finances suggest they should decrease.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>The experience is artificially more thrilling—we can add more lights, faster animations, louder sounds for high-bet spins—but the mathematics remain unchanged.</p>
-            <p>We're creating an emotional justification (more excitement) for an irrational financial decision (betting more than you can afford).</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>What about features that seem to justify escalation through enhanced excitement? 'Bet $10 to activate the double-speed jackpot round!' Higher bets don't risk more money—they unlock more thrilling experiences.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>And here's the dark part—higher bets create bigger emotional swings.</p>
-            <p>A $100 win on a $1 bet feels nice. A $100 win on a $50 bet feels like breathing after drowning.</p>
-            <p>The emotional intensity of wins at higher bet levels creates powerful positive reinforcement.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>The experience is artificially more thrilling—we can add more lights, faster animations, louder sounds for high-bet spins—but the mathematics remain unchanged.</p>
+                        <p>We're creating an emotional justification (more excitement) for an irrational financial decision (betting more than you can afford).</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Even though the win represents a net loss.</p>
-            <p>They bet $50, won $100, they're celebrating a $50 profit while forgetting the $500 they've already lost at that bet level.</p>
-            <p>The intensity of the emotional experience overrides rational financial accounting.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>And here's the dark part—higher bets create bigger emotional swings.</p>
+                        <p>A $100 win on a $1 bet feels nice. A $100 win on a $50 bet feels like breathing after drowning.</p>
+                        <p>The emotional intensity of wins at higher bet levels creates powerful positive reinforcement.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker dave">Dave:</div>
-            <p>So escalation serves multiple purposes.</p>
-            <p>It increases our immediate profit per spin. It creates emotional intensity that deepens engagement. It activates pride and status-seeking. It provides frameworks for loss-chasing that feel strategic rather than desperate.</p>
-            <p>And it creates identity investment that makes de-escalation psychologically difficult.</p>
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Even though the win represents a net loss.</p>
+                        <p>They bet $50, won $100, they're celebrating a $50 profit while forgetting the $500 they've already lost at that bet level.</p>
+                        <p>The intensity of the emotional experience overrides rational financial accounting.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="speaker eve">Eve:</div>
-            <p>Someone who's escalated from $1 to $10 per spin has exponentially increased their loss rate while creating psychological barriers to reverting to safer betting levels.</p>
-            <p>It's a ratchet mechanism—easy to escalate, hard to de-escalate, devastating to maintain.</p>
+            <div class="message dave">
+                <div class="message-bubble">
+                    <span class="speaker-name">Dave</span>
+                    <div class="message-content">
+                        <p>So escalation serves multiple purposes.</p>
+                        <p>It increases our immediate profit per spin. It creates emotional intensity that deepens engagement. It activates pride and status-seeking. It provides frameworks for loss-chasing that feel strategic rather than desperate.</p>
+                        <p>And it creates identity investment that makes de-escalation psychologically difficult.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message eve">
+                <div class="message-bubble">
+                    <span class="speaker-name">Eve</span>
+                    <div class="message-content">
+                        <p>Someone who's escalated from $1 to $10 per spin has exponentially increased their loss rate while creating psychological barriers to reverting to safer betting levels.</p>
+                        <p>It's a ratchet mechanism—easy to escalate, hard to de-escalate, devastating to maintain.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="scene-break">***</div>
 
         <h2>Knowing When to Stop: How to Resist the Urge to Raise the Stakes</h2>
 
@@ -246,7 +323,7 @@
 
         <p>Every bit of it.</p>
 
-        <h2>Understanding the Escalation Trap</h2>
+        <h3>Understanding the Escalation Trap</h3>
 
         <p>Let's start with mathematical reality: higher bets don't improve your odds.</p>
 
@@ -266,9 +343,9 @@
 
         <p>It may be true that higher bets unlock different features on machines—bonus rounds, jackpots, special animations—but these features don't change the underlying odds. They're just different ways to lose money faster.</p>
 
-        <h2>Defensive Strategies Against Escalation</h2>
+        <h3>Defensive Strategies Against Escalation</h3>
 
-        <h3>Strategy 1: Set an Absolute Bet Limit Before You Start</h3>
+        <p><strong>Strategy 1: Set an Absolute Bet Limit Before You Start</strong></p>
 
         <p>Before you sit at a machine, decide the maximum bet you'll place. Not the maximum you 'might' place if things go well—the absolute cap you will not exceed under any circumstances. Write it on your hand if you need to. '$2 maximum bet—no exceptions.' When the machine suggests you increase your bet to unlock features, when you see someone else win big on higher bets, when you think you need to bet bigger to recover losses—look at your hand.</p>
 
@@ -276,7 +353,7 @@
 
         <p>The brilliance of an absolute limit is it removes all the emotional justification and rationalization from the decision. You're not deciding in the heat of the moment whether higher bets make sense. You've already decided they don't, and the limit enforces that decision.</p>
 
-        <h3>Strategy 2: Understand Loss-Chasing Mathematics</h3>
+        <p><strong>Strategy 2: Understand Loss-Chasing Mathematics</strong></p>
 
         <p>When you've lost $200 and you think 'If I increase my bets, I can win it back faster,' stop and do the actual math. At $2 per spin, if you win $200 (which would be a significant winning session), you've recovered your losses. At $10 per spin, if you win $200, you've recovered your losses equally fast in dollar terms but much faster in time.</p>
 
@@ -286,7 +363,7 @@
 
         <p>The higher bets don't change the probability of winning; they accelerate the timeline of either unlikely recovery or likely devastation.</p>
 
-        <h3>Strategy 3: Reject the 'Unlock Features' Framing</h3>
+        <p><strong>Strategy 3: Reject the 'Unlock Features' Framing</strong></p>
 
         <p>When machines tell you to 'bet $5 to unlock the mega jackpot,' they're creating artificial scarcity. The 'locked' features aren't better value—they're different graphics around the same house edge. Think about it this way: if the mega jackpot feature genuinely gave players better odds, the venue would lose money on it.</p>
 
@@ -296,7 +373,7 @@
 
         <p>When you see these prompts, translate them in your head: 'Bet $5 to unlock the faster-losses feature!' or 'Bet $5 to access the same house edge with bigger numbers!' Strip away the appealing language and see the reality.</p>
 
-        <h3>Strategy 4: Deliberately Downgrade Instead of Upgrade</h3>
+        <p><strong>Strategy 4: Deliberately Downgrade Instead of Upgrade</strong></p>
 
         <p>If you find yourself tempted to increase your bet, do the opposite. Deliberately decrease it. Bet the minimum the machine allows.</p>
 
@@ -304,7 +381,7 @@
 
         <p>But that humiliation was my pride trying to keep me trapped. Swallowing my pride and betting small was an act of self-respect, not weakness.</p>
 
-        <h3>Strategy 5: Track Escalation Triggers</h3>
+        <p><strong>Strategy 5: Track Escalation Triggers</strong></p>
 
         <p>Pay attention to what triggers your urge to increase bets. Is it:</p>
         <ul>
@@ -325,7 +402,7 @@
 
         <p>I do not increase bets.' The rule removed the decision-making from the trigger moment.</p>
 
-        <h3>Strategy 6: Calculate the Realistic Recovery Timeline</h3>
+        <p><strong>Strategy 6: Calculate the Realistic Recovery Timeline</strong></p>
 
         <p>When you're thinking about increasing bets to recover losses, calculate what recovery would require. You're down $500. At $10 per spin, you'd need to win $500 in a session. What's the probability of that? If the machine's average payout is 90%, you're expecting to lose 10% of all bets. To win $500, you'd need to hit an outcome at least 5.5 standard deviations from expected—possible but extremely unlikely. More likely, you increase your bets to $10 per spin and burn through your remaining $200 bankroll in about 20-30 spins, leaving you down $700 instead of $500.</p>
 
@@ -333,7 +410,7 @@
 
         <p>The only thing escalation accomplishes is faster wealth transfer from your pocket to the venue's accounts.</p>
 
-        <h2>The Psychology of De-escalation</h2>
+        <h3>The Psychology of De-escalation</h3>
 
         <p>One of the reasons escalation is such an effective trap is that de-escalation feels like failure. You've established yourself as someone who bets at a certain level. Dropping down feels like admitting you can't afford it, like regression, like losing status.</p>
 
@@ -347,7 +424,7 @@
 
         <p>When you feel that resistance to de-escalation, recognise it as your brain protecting your ego at the expense of your wallet. Your ego will recover from wounded pride much faster than your finances will recover from escalated losses.</p>
 
-        <h2>Special Warning: Promotion Nights</h2>
+        <h3>Special Warning: Promotion Nights</h3>
 
         <p>High-roller nights, big-bettor events, premium-player promotions—these are escalation traps disguised as exclusive opportunities.</p>
 
@@ -361,7 +438,7 @@
 
         <p>If you must attend social events at gambling venues, attend ones that don't have minimum betting requirements. Don't let artificial social pressure drive your betting levels.</p>
 
-        <h2>The Bottom Line on Escalation</h2>
+        <h3>The Bottom Line on Escalation</h3>
 
         <p>Every single justification for increasing your bet is false:</p>
 
@@ -387,10 +464,45 @@
 
         <p>The urge to increase your bets is the trap calling. Resist it absolutely.</p>
 
-        <div class="navigation">
-            <a href="07-illusion-of-control.html" class="nav-link">← Previous: Chapter 7</a>
-            <a href="09-final-design-touches.html" class="nav-link">Next: Chapter 9 →</a>
+        <div class="chapter-nav">
+            <a href="07-illusion-of-control.html">← Previous</a>
+            <a href="09-final-design-touches.html">Next →</a>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="crisis-helpline" style="margin-bottom: 24px;">
+                <p style="margin: 0;"><strong>If you need help:</strong> Gambling Help Online <a href="tel:1800858858">1800 858 858</a> (24/7)</p>
+            </div>
+            <p><strong>Free forever. Created to help, not profit.</strong></p>
+            <p><a href="https://github.com/xeeva/The-Machines-Playbook" target="_blank">View on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to 'dark'
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+    </script>
 </body>
 </html>
