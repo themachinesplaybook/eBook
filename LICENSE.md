@@ -2,7 +2,7 @@
 
 ## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 
-Copyright © 2025 Dave Summers
+Copyright © 2025 David John Summers
 
 ---
 
@@ -17,7 +17,7 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ### Under the following terms:
 
-**Attribution (BY)** — You must give appropriate credit to Dave Summers as the original author, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+**Attribution (BY)** — You must give appropriate credit to David John Summers as the original author, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 **NonCommercial (NC)** — You may not use the material for commercial purposes. This means you **cannot sell this book, charge for access, or profit from it in any way**. The book is and will always be free.
 
@@ -54,7 +54,7 @@ No warranties are given. The license may not give you all of the permissions nec
 - Include it in paid courses, workshops, or training programs
 - Republish it under a different license
 - Claim it as your own work
-- Remove attribution to Dave Summers
+- Remove attribution to David John Summers
 
 ---
 
@@ -64,7 +64,7 @@ No warranties are given. The license may not give you all of the permissions nec
 
 **Media and journalists** may quote excerpts under fair use/fair dealing provisions with appropriate attribution.
 
-**For commercial licensing inquiries** (e.g., inclusion in paid treatment programs, institutional licensing), please contact Dave Summers.
+**For commercial licensing inquiries** (e.g., inclusion in paid treatment programs, institutional licensing), please contact David John Summers.
 
 ---
 
@@ -79,7 +79,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 When sharing or referencing this work, please use:
 
-**"The Machine's Playbook: A Recovered Addict and an AI Reveal How Pokies Really Work" by Dave Summers, with Eve (GPT) and Claude (AI). Licensed under CC BY-NC-SA 4.0.**
+**"The Machine's Playbook: A Recovered Addict and an AI Reveal How Pokies Really Work" by David John Summers, with Eve (GPT) and Claude (AI). Licensed under CC BY-NC-SA 4.0.**
 
 ---
 
