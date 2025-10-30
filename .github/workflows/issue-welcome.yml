@@ -1,0 +1,20 @@
+name: Welcome New Issues
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on new issue
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            👋 Thank you for your contribution.
+
+            Your voice matters — you're helping illuminate how pokies work and how we can break free from their influence.
+
+            We'll review this shortly.  
+            In the meantime, feel free to join the conversation in **Discussions**.
