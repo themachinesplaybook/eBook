@@ -97,7 +97,7 @@ The BY (Attribution) clause ensures that the work and its origins are properly c
 
 For questions about this license or special permission requests:
 - **GitHub:** https://github.com/xeeva/The-Machines-Playbook
-- **Book Website:** [To be added]
+- **Book Website:** https://themachinesplaybook.com
 
 ---
 
@@ -106,3 +106,4 @@ For questions about this license or special permission requests:
 ---
 
 *Last updated: 24 October 2025*
+
