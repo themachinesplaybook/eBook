@@ -184,51 +184,36 @@ li {
   color: var(--text-primary);
 }
 
-/* Message Bubbles */
+/* Message Bubbles - Works with simplified HTML structure */
 .message {
-  margin-bottom: var(--space-md);
-  display: flex;
-  align-items: flex-start;
-}
-
-/* Dave's messages (LEFT-aligned, blue) - Author/driver of conversation */
-.message.dave {
-  justify-content: flex-start;
-}
-
-/* Eve's messages (RIGHT-aligned, grey) - AI responder */
-.message.eve {
-  justify-content: flex-end;
-}
-
-.message-bubble {
-  max-width: 80%;
-  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-lg);
+  max-width: 85%;
+  padding: var(--space-md);
   border-radius: 18px;
   position: relative;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Dave's bubble (left-aligned, blue) */
-.message.dave .message-bubble {
+/* Dave's messages (LEFT-aligned, blue) */
+.message.dave {
   background: var(--dave-bubble);
   color: white;
+  margin-right: auto;
   border-bottom-left-radius: 4px;
-  text-align: left;
 }
 
-/* Eve's bubble (right-aligned, dark grey) */
-.message.eve .message-bubble {
+/* Eve's messages (RIGHT-aligned, grey) */
+.message.eve {
   background: var(--eve-bubble);
   color: var(--text-primary);
+  margin-left: auto;
   border-bottom-right-radius: 4px;
-  text-align: left;
 }
 
 .speaker-name {
-  font-weight: 600;
-  font-size: 0.85em;
-  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-bottom: 8px;
   display: block;
 }
 
@@ -240,50 +225,48 @@ li {
   color: var(--eve-green);
 }
 
-.message-content {
-  line-height: 1.5;
-}
-
-/* Ensure text color is correct in bubbles */
-.message.dave .message-content {
+/* Text colors inside messages */
+.message.dave p,
+.message.dave li,
+.message.dave strong,
+.message.dave em {
   color: white;
 }
 
-.message.dave .message-content p,
-.message.dave .message-content li,
-.message.dave .message-content strong,
-.message.dave .message-content em {
-  color: white;
-}
-
-.message.eve .message-content {
+.message.eve p,
+.message.eve li,
+.message.eve strong,
+.message.eve em {
   color: var(--text-primary);
 }
 
-.message.eve .message-content p,
-.message.eve .message-content li,
-.message.eve .message-content strong,
-.message.eve .message-content em {
-  color: var(--text-primary);
-}
-
-.message-content p {
+.message p {
   margin-bottom: var(--space-xs);
+  line-height: 1.6;
 }
 
-.message-content p:last-child {
+.message p:last-child {
   margin-bottom: 0;
 }
 
-.message-content ul,
-.message-content ol {
+.message ul,
+.message ol {
   margin-left: var(--space-md);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-xs);
 }
 
-.message-content li {
+.message li {
   margin-bottom: 4px;
+}
+
+/* Legacy support for message-bubble wrapper if present */
+.message-bubble {
+  max-width: 100%;
+}
+
+.message-content {
+  line-height: 1.6;
 }
 
 /* Responsive */
