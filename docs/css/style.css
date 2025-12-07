@@ -446,6 +446,172 @@ section li {
   color: var(--text-primary);
 }
 
+/* Get the Book Section - Store Buttons */
+.get-the-book {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+  padding: var(--space-xl);
+  border-radius: 12px;
+  margin: var(--space-xl) 0;
+  text-align: center;
+  border: 1px solid rgba(74, 158, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.get-the-book h2 {
+  margin-top: 0;
+  color: white;
+  font-size: 1.8em;
+}
+
+.get-the-book .store-intro {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1em;
+  margin-bottom: var(--space-lg);
+}
+
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin: var(--space-lg) 0;
+}
+
+.store-category {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.store-category h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  font-size: 1.2em;
+}
+
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 130px;
+  justify-content: center;
+}
+
+.store-btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.store-btn svg {
+  flex-shrink: 0;
+}
+
+/* Spotify - Green */
+.store-btn.spotify {
+  background: #1DB954;
+  color: white;
+}
+
+.store-btn.spotify:hover {
+  background: #1ed760;
+}
+
+/* Audible - Orange */
+.store-btn.audible {
+  background: #f8991d;
+  color: white;
+}
+
+.store-btn.audible:hover {
+  background: #ffa836;
+}
+
+/* Apple - Gradient */
+.store-btn.apple {
+  background: linear-gradient(135deg, #fc3c44 0%, #f94c57 100%);
+  color: white;
+}
+
+.store-btn.apple:hover {
+  background: linear-gradient(135deg, #fd5c63 0%, #fa6c73 100%);
+}
+
+/* Amazon Kindle - Orange/Black */
+.store-btn.kindle {
+  background: #ff9900;
+  color: #232f3e;
+}
+
+.store-btn.kindle:hover {
+  background: #ffad33;
+}
+
+/* Kobo - Teal */
+.store-btn.kobo {
+  background: #00a1e4;
+  color: white;
+}
+
+.store-btn.kobo:hover {
+  background: #00b4ff;
+}
+
+/* Google Play - Multi-color inspired */
+.store-btn.google {
+  background: #4285f4;
+  color: white;
+}
+
+.store-btn.google:hover {
+  background: #5a9cf6;
+}
+
+.free-online-note {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1em;
+  margin-top: var(--space-lg);
+  margin-bottom: 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments for store buttons */
+@media (max-width: 768px) {
+  .get-the-book {
+    padding: var(--space-lg);
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-category {
+    width: 100%;
+    max-width: none;
+  }
+
+  .store-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
 /* Print styles */
 @media print {
   body {
