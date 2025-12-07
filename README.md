@@ -100,7 +100,7 @@ docs/
 
 ## 💙 Support This Work
 
-**This book is free online, forever.** It was created to help people, not to generate profit.
+**This book is free online.** It was created to help people, not to generate profit.
 
 If this book helped you or someone you love, you can support ongoing recovery resources:
 
@@ -193,3 +193,4 @@ Eve is the name I gave to OpenAI's GPT-4 (later GPT-5) during the late-night con
 If you found this book helpful, consider starring this repository to help others discover it.
 
 ---
+
