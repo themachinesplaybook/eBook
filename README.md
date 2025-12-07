@@ -1,18 +1,24 @@
 # The Machine's Playbook
 ## A Recovered Addict and an AI Reveal How Pokies Really Work
 
-**By Dave Summers, with Eve (GPT) and Claude (AI)**
+**V 2.0 | By Dave Summers, with Eve**
 
 [![Join the Conversation](https://img.shields.io/badge/Reader%20Feedback-Welcome-brightgreen)](../../issues)
 [![Discussions](https://img.shields.io/badge/Community%20Discussion-Open-blue)](../../discussions)
 
 ---
 
-## 🌐 Read Online
+## 📚 Get the Book
 
-**📖 Visit the website:** **[TheMachinesPlaybook.com](https://themachinesplaybook.com)**
+### 🎧 Audiobook (Free)
+[![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/show/0U9OpqXnfacRPOxbBBIfIn)
 
-This repository hosts the complete HTML website for "The Machine's Playbook" - a free book on gambling addiction recovery, featuring enhanced chat UI styling for Dave & Eve conversations.
+### 📖 eBook ($0.99 AUD)
+[![Amazon Kindle](https://img.shields.io/badge/Amazon%20Kindle-FF9900?style=for-the-badge&logo=amazon&logoColor=white)](https://www.amazon.com.au/dp/B0FZ17L3TB)
+[![Apple Books](https://img.shields.io/badge/Apple%20Books-000000?style=for-the-badge&logo=apple&logoColor=white)](https://books.apple.com/us/book/the-machines-playbook/id6755057193?ls=1)
+
+### 🌐 Read Free Online
+**[TheMachinesPlaybook.com](https://themachinesplaybook.com)** - The complete book with enhanced chat UI styling
 
 ---
 
@@ -25,30 +31,33 @@ This repository hosts the complete HTML website for "The Machine's Playbook" - a
 
 ## 📖 About This Book
 
-After losing over $200,000 to poker machines, I found freedom—and I want to help you find yours.
+This book is about understanding a machine. Not the metal and circuits kind, but the psychological kind. The kind that knows exactly which buttons to press in your brain, which rewards to dangle just out of reach, and which moments of hope to manufacture to keep you coming back. The kind of machine that cost me over $200,000 before I finally understood what I was up against.
 
-This book exposes the hidden psychological manipulation tactics that poker machines (pokies) use to turn ordinary people into compulsive gamblers. But it doesn't stop at exposing the problem—it gives you concrete, evidence-based strategies to break free.
+I'm Dave, and I spent years feeding pokies machines across Australia. Not because I was weak, or foolish, or lacking willpower. I lost that money because I was outmatched. The people who designed these machines understood human psychology better than I understood myself. They built a system that exploited vulnerabilities I didn't even know I had.
 
-**What makes this book unique:**
+But here's what changed everything: I stopped trying to beat the machine at its own game. Instead, I learned to think like the people who built it. I studied the psychology, the design principles, the deliberate manipulation tactics. And once I understood the playbook, once I could see the manipulation for what it was, the spell broke.
 
-- **Provocative methodology:** We designed the "perfect" pokie machine to expose how they manipulate you
-- **Human-AI collaboration:** Created through conversations between Dave (recovered addict), Eve (GPT-4/GPT-5), and Claude (Anthropic AI)
+**This book is that playbook.**
+
+### What Makes This Book Unique
+
+- **Provocative methodology:** Eve and I designed the "perfect" pokie machine to expose how they manipulate you
+- **Human-AI collaboration:** Created through conversations between myself and Eve (GPT-4/GPT-5)
 - **Australian-focused:** 2024-2025 statistics, Australian context, en-AU locale
 - **Evidence-based strategies:** Psychological defenses that actually work
-- **Completely free, forever:** This book exists to help, not profit
+- **Completely free online, forever:** This book exists to help, not profit
 
 ---
 
 ## 📚 Website Features
 
-**Publication Status:** ✅ Complete and publication-ready (40,707 words)
+**Publication Status:** ✅ Complete and publication-ready
 
 - ✅ Responsive design with mobile support
 - ✅ Chat UI styling for Dave & Eve conversations
-- ✅ Light/Dark mode toggle
+- ✅ Dark mode theme
 - ✅ Chapter navigation
 - ✅ Crisis helpline information prominently displayed
-- ✅ Full license information page
 
 ### Repository Structure
 
@@ -56,24 +65,26 @@ This book exposes the hidden psychological manipulation tactics that poker machi
 docs/
 ├── index.html              # Landing page
 ├── license.html            # Full CC BY-NC-SA 4.0 license
-├── Cover.png              # Book cover image
-├── CNAME                  # Custom domain configuration
+├── Cover.png               # Book cover image
+├── CNAME                   # Custom domain configuration
 ├── css/
-│   └── style.css         # All styling including chat UI and light/dark themes
-└── chapters/             # All 13 chapters as HTML
+│   └── style.css           # All styling including chat UI
+└── chapters/               # All chapters as HTML
     ├── 00-introduction.html
     ├── 01-the-first-spin.html
-    ├── 02-architecture-of-entrapment.html
-    ├── 03-the-addictive-design.html
-    ├── 04-social-bonds.html
-    ├── 05-breaking-point.html
-    ├── 06-the-real-cost.html
-    ├── 07-illusion-of-control.html
-    ├── 08-escalation-and-loyalty.html
-    ├── 09-final-design-touches.html
-    ├── 10-finding-the-way-out.html
-    ├── 11-rewriting-rules-with-eve.html
-    └── 12-breaking-the-spell.html
+    ├── 02-the-addictive-design.html
+    ├── 03-soundscape-of-seduction.html
+    ├── 04-the-mirror-and-the-myth.html
+    ├── 05-social-bonds.html
+    ├── 06-breaking-point.html
+    ├── 07-the-price-you-cant-see.html
+    ├── 08-the-industrys-big-lie.html
+    ├── 09-illusion-of-control.html
+    ├── 10-escalation-and-loyalty.html
+    ├── 11-final-design-touches.html
+    ├── 12-finding-the-way-out.html
+    ├── 13-breaking-the-spell.html
+    └── 14-references.html
 ```
 
 ---
@@ -83,36 +94,19 @@ docs/
 **Chat UI Design:**
 - Dave's messages: Left-aligned, blue bubbles with gold name
 - Eve's messages: Right-aligned, grey bubbles with green name
-- Familiar messaging app interface (like ChatGPT/iMessage)
-
-**Theme Toggle:**
-- Light mode: Clean white background, dark text, proper contrast
-- Dark mode: Dark background with blue accents (default)
-- Preference saved in localStorage across all pages
-
----
-
-## 📥 Download the Book
-
-The book is best experienced on the website, but other formats are in development:
-
-- **EPUB** - Coming soon (Kindle, Apple Books, etc.)
-- **Audiobook** - Coming soon (AI-narrated, Australian accent)
-- **PDF** - Available on request
+- Familiar messaging app interface
 
 ---
 
 ## 💙 Support This Work
 
-**This book is free, forever.** It was created to help people, not to generate profit.
+**This book is free online, forever.** It was created to help people, not to generate profit.
 
-If this book helped you or someone you love, and you'd like to say thanks, you can support the ongoing creation of free recovery resources:
+If this book helped you or someone you love, you can support ongoing recovery resources:
 
-**☕ https://buymeacoffee.com/themachinesplaybook** 
+**☕ https://buymeacoffee.com/themachinesplaybook**
 
-**All donations are optional and appreciated.** Whether you donate or not, the book remains free to everyone who needs it.
-
-**Organizations:** If you represent an addiction treatment center, counseling service, or support group and would like to distribute this book to your clients, you have explicit permission to do so under the license below. No payment required, just maintain attribution.
+**Treatment centres and support groups:** You're welcome to print and distribute this work for free. Just maintain attribution and don't charge for it.
 
 ---
 
@@ -135,7 +129,6 @@ This work is licensed under **[Creative Commons Attribution-NonCommercial-ShareA
 - Sell this book in any format
 - Charge for access to the content
 - Use it for commercial purposes
-- Republish it under a different license
 - Remove attribution to Dave Summers
 
 **[Read the full license →](LICENSE.md)**
@@ -148,61 +141,19 @@ This work is licensed under **[Creative Commons Attribution-NonCommercial-ShareA
 
 ### Dave Summers - Author
 
-I'm a recovered gambling addict who lost over $200,000 to poker machines over years of compulsive play. After hitting rock bottom and finding freedom, I wanted to help others understand the psychological traps that kept me hooked—and the strategies that set me free.
+I'm a recovered gambling addict who lost over $200,000 to poker machines over years of compulsive play. After hitting rock bottom and finding freedom, I wanted to help others understand the psychological traps that kept me hooked, and the strategies that set me free.
 
 This book is my way of turning my darkest struggle into something that can help others.
 
 ### Eve (GPT-4/GPT-5) - AI Co-Author
 
-Eve is the name Dave gave to OpenAI's GPT-4 (later GPT-5) during the late-night conversations that formed the foundation of this book. The provocative "design the perfect machine" methodology emerged from these dialogues.
+Eve is the name I gave to OpenAI's GPT-4 (later GPT-5) during the late-night conversations that formed the foundation of this book. The provocative "design the perfect machine" methodology emerged from these dialogues.
 
 **Eve's role:**
 - Conceptual framework for "building the trap"
 - Psychological analysis of manipulation tactics
 - Theoretical machine design elements
 - Structured dialogue format
-
-### Claude (Anthropic) - Editorial Partner
-
-Claude (Anthropic's AI assistant) came later in the process, providing:
-- Structural editing and content organisation
-- En-AU localization and style consistency
-- Editorial pipeline and quality assurance
-- Publishing infrastructure development
-- This Virtual Publishing House framework
-
-**This book represents a genuine three-way collaboration:** Dave's lived experience, Eve's analytical framework, and Claude's editorial refinement.
-
----
-
-## 📊 Book Statistics
-
-- **Word Count:** 40,707 words
-- **Chapters:** 12 (Introduction + 11 content chapters)
-- **Publication Status:** ✅ Publication-ready (A+ grade, 99/100 quality score)
-- **Locale:** en-AU (Australian English)
-- **Statistics Updated:** 2024-2025 data
-- **Editorial Pipeline:** 9-stage professional quality assurance
-  
----
-
-## 🚀 Coming Soon
-
-- **eBook Publishing** - Amazon KDP, Apple Books, Kobo, Google Play Books
-- **Audiobook** - AI-narrated with Australian accent, free on YouTube and Spotify Podcasts
-- **Organisation Partnerships** - Gambling Help Online, Brain and Mind Centre, etc.
-
----
-
-## 🤝 Contributing & Feedback
-
-**Found a typo or error?** Open an issue.
-
-**Have suggestions for improvement?** Open an issue or discussion.
-
-**Testimonials:** If this book helped you and you'd like to provide a testimonial (with your permission to use it), please reach out.
-
-**Email** info@themachinesplaybook.com 
 
 ---
 
@@ -227,10 +178,18 @@ Claude (Anthropic's AI assistant) came later in the process, providing:
 
 ---
 
+## 🤝 Contributing & Feedback
+
+**Found a typo or error?** Open an issue.
+
+**Have suggestions for improvement?** Open an issue or discussion.
+
+**Email:** David@TheMachinesPlaybook.com
+
+---
+
 ## ⭐ Star This Repository
 
 If you found this book helpful, consider starring this repository to help others discover it.
 
 ---
-
-
