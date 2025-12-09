@@ -145,6 +145,10 @@ I'm a recovered gambling addict who lost over $200,000 to poker machines over ye
 
 This book is my way of turning my darkest struggle into something that can help others.
 
+**Follow Dave:**
+- [LinkedIn](https://www.linkedin.com/in/david-summers-6567a7393/)
+- [Facebook](https://www.facebook.com/share/17mRDXzMSA/)
+
 ### Eve (GPT-4/GPT-5) - AI Co-Author
 
 Eve is the name I gave to OpenAI's GPT-4 (later GPT-5) during the late-night conversations that formed the foundation of this book. The provocative "design the perfect machine" methodology emerged from these dialogues.
